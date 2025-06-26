@@ -1,0 +1,15 @@
+{
+  "analyze_text": "Analysiere folgendes Dokument namens {doc_name}:\n\n{content}",
+  "analyze_image": "Beschreibe das Bild und analysiere, ob es für ein App-/Projekt relevant ist.",
+  "create_summary": "Fasse alle Analysen zusammen:\n\n{all_analyses}",
+  "create_prd": "Erstelle ein Produktkonzept basierend auf:\n\n{summary}",
+  "create_deep_search_prompt": "Erzeuge eine Deep-Search-Strategie basierend auf:\n\n{summary}",
+  "quality_check": "Überprüfe dieses Dokument ({content_type}) auf Qualität und Verständlichkeit:\n\n{content}",
+  "double_check": "Führe eine Sicherheitsprüfung durch für dieses {content_type}:\n\n{content}",
+  "determine_project_name": "Gib einen kurzen, neutralen Projektnamen für folgendes Forschungsergebnis:\n\n{research_summary}",
+  "create_improved_prd": "Verbessere das Produktkonzept basierend auf:\n\n{combined_research}",
+  "create_workflow": "Erstelle einen Workflow für das Projekt basierend auf:\n\n{combined_research}",
+  "create_mise_en_place": "Was wird zur Umsetzung benötigt? Basierend auf:\n\n{combined_research}",
+  "identify_pages": "Welche App-/Webseiten-Module ergeben sich aus dieser Analyse?\n\n{combined_research}",
+  "create_single_page_workflow": "Erstelle einen Ablaufplan für die Seite '{page_name}' auf Basis von:\n\n{combined_research}"
+}
