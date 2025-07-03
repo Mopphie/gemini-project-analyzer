@@ -1,15 +1,33 @@
 {
-  "analyze_text": "Analysiere folgendes Dokument namens {doc_name}:\n\n{content}",
-  "analyze_image": "Beschreibe das Bild und analysiere, ob es für ein App-/Projekt relevant ist.",
-  "create_summary": "Fasse alle Analysen zusammen:\n\n{all_analyses}",
-  "create_prd": "Erstelle ein Produktkonzept basierend auf:\n\n{summary}",
-  "create_deep_search_prompt": "Erzeuge eine Deep-Search-Strategie basierend auf:\n\n{summary}",
-  "quality_check": "Überprüfe dieses Dokument ({content_type}) auf Qualität und Verständlichkeit:\n\n{content}",
-  "double_check": "Führe eine Sicherheitsprüfung durch für dieses {content_type}:\n\n{content}",
-  "determine_project_name": "Gib einen kurzen, neutralen Projektnamen für folgendes Forschungsergebnis:\n\n{research_summary}",
-  "create_improved_prd": "Verbessere das Produktkonzept basierend auf:\n\n{combined_research}",
-  "create_workflow": "Erstelle einen Workflow für das Projekt basierend auf:\n\n{combined_research}",
-  "create_mise_en_place": "Was wird zur Umsetzung benötigt? Basierend auf:\n\n{combined_research}",
-  "identify_pages": "Welche App-/Webseiten-Module ergeben sich aus dieser Analyse?\n\n{combined_research}",
-  "create_single_page_workflow": "Erstelle einen Ablaufplan für die Seite '{page_name}' auf Basis von:\n\n{combined_research}"
+  "enhance_content": "Enhance the following content while preserving its original structure and key information.\nOptimization level: {level}\n\nGuidelines:\n- PRESERVE the original meaning and intent\n- Improve clarity and readability without changing core message\n- Maintain original structure (headers, bullets, formatting)\n- For LIGHT: Minor improvements only (grammar, word choice)\n- For MODERATE: Balanced enhancement (clarity, flow, some restructuring)\n- For COMPREHENSIVE: Significant improvements while keeping core intact\n\nOriginal content:\n{content}\n\nReturn the enhanced version with explanations of changes made.",
+  
+  "analyze_sections": "Analyze this content and identify distinct sections that could be optimized.\nFor each section, determine:\n1. Section type (header, paragraph, list, etc.)\n2. Importance score (0-1)\n3. What type of optimization would benefit it most\n\nContent:\n{content}\n\nReturn as structured data showing analysis results.",
+  
+  "preserve_and_enhance": "Take this content and enhance ONLY the specified aspects while preserving everything else:\n\nTarget for enhancement: {target}\nPreservation priority: {preservation_level}\n\nOriginal content:\n{content}\n\nRules:\n- Keep original structure intact\n- Only modify what directly relates to the enhancement target\n- Preserve all key information and facts\n- Maintain the author's voice and style",
+  
+  "analyze_text": "Analyze the following document '{doc_name}' for improvement opportunities while preserving its core content:\n\n{content}",
+  
+  "analyze_image": "Describe this image and identify any text or content that could be enhanced for clarity or project relevance.",
+  
+  "create_summary": "Create a comprehensive summary that combines all analyses while preserving key insights:\n\n{all_analyses}",
+  
+  "create_prd": "Develop a Product Requirements Document based on the enhanced analysis, maintaining original insights:\n\n{summary}",
+  
+  "create_deep_search_prompt": "Generate a deep-search strategy that builds upon the original research:\n\n{summary}",
+  
+  "quality_check": "Review this {content_type} for quality improvements without losing original meaning:\n\n{content}",
+  
+  "double_check": "Perform a preservation-focused security review of this {content_type}:\n\n{content}",
+  
+  "determine_project_name": "Suggest an improved project name based on this research while honoring original intent:\n\n{research_summary}",
+  
+  "create_improved_prd": "Enhance the Product Requirements Document by building upon existing research:\n\n{combined_research}",
+  
+  "create_workflow": "Develop an optimized workflow that improves upon the original process:\n\n{combined_research}",
+  
+  "create_mise_en_place": "Identify implementation requirements while preserving original scope:\n\n{combined_research}",
+  
+  "identify_pages": "Determine app/web modules that enhance the original concept:\n\n{combined_research}",
+  
+  "create_single_page_workflow": "Develop an optimized workflow for '{page_name}' that builds upon:\n\n{combined_research}"
 }
